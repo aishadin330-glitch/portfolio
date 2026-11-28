@@ -90,7 +90,7 @@ dl.k dd{margin:0}
       <li>Supervisor: Md. Masud Parvez, Assistant Professor, Department of Science and Humanities, AAUB.</li>
       <li>Simulating three device metrics (efficiency, quantum efficiency, fill factor) of lead-free perovskite cells with an MoS₂ electron transport layer in SCAPS-1D.</li>
       <li>Analysing the atomic structure and characteristics of the thesis materials (lead-free perovskite, MoS₂) in Materials Studio.</li>
-      <li>Selected three tools for the radiation-effects stage: SPENVIS (orbit environment and shielding), SR-NIEL (non-ionising energy loss) and SRIM/TRIM (ion range and displacement damage). No radiation results yet.</li>
+      <li>Selected three tools for the radiation-effects stage: SPENVIS (orbit environment and shielding), SR-NIEL (non-ionising energy loss) and SRIM/TRIM (ion range and displacement damage). Ran SPENVIS and SRIM/TRIM in a course project (see Projects); thesis radiation results are still to come.</li>
     </ul>
   </div>
   <div class="entry">
@@ -112,6 +112,10 @@ dl.k dd{margin:0}
 
 <section>
   <h2>Projects</h2>
+  <div class="entry">
+    <div class="row"><span><span class="t">Machine-learning prediction of a proton-irradiated lead-free solar cell</span></span><span class="r">Course project</span></div>
+    <p>With two teammates, supervised by Dr. S. M. Sadakatul Bari. Ran the radiation chain for an ITO/C60/Rb₂AgInBr₆/Cu₂NiSnS₄/Pt cell in the ISS orbit: SPENVIS (AP9 protons), MULASSIS (5 mm glass) and SRIM/TRIM gave a radiation defect density of 1.59 × 10⁷ cm⁻³, added in SCAPS-1D. Produced 4,212 simulated devices (efficiency 1.5–37%) and trained 5 regression models: CatBoost reached a test R² of 0.9999 and a 0.48% efficiency error on 48 unseen devices; SHAP showed defect and acceptor density dominate. The model fails outside its range, and the data are simulated only.</p>
+  </div>
   <div class="entry">
     <div class="row"><span><span class="t">AeroSoar</span>: vertical air velocity estimation for soaring gliders</span><span class="r">Simulation study</span></div>
     <p>Built an open-source simulator (Python and JavaScript, MIT licence) to estimate vertical air velocity and detect thermals for autonomous soaring gliders. Compared causal filters and detectors (Kalman, extended Kalman, particle filters, CUSUM) over 30 simulated flights per condition, across 3 mission types and with sensor faults. In simulation, substituting the true speed rate for the Kalman filter’s estimate cut its error in speed changes from 0.70 to 0.05 m/s. Replayed 53 minutes of recorded flight data (public ALFA dataset) to check the sensor assumptions. Reproducible from fixed seeds; simulation only, with no claim of flight readiness. <a href="https://github.com/aishadin330-glitch/Aerosoar" target="_blank" rel="noopener">Code</a> · <a href="https://aishadin330-glitch.github.io/Aerosoar/" target="_blank" rel="noopener">Live simulator</a></p>
@@ -141,7 +145,8 @@ dl.k dd{margin:0}
 <section>
   <h2>Skills</h2>
   <dl class="k">
-    <div><dt>Simulation and analysis</dt><dd>SCAPS-1D, Materials Studio, SRIM/TRIM, SPENVIS, SR-NIEL, OriginPro, ImageJ, numerical methods, machine learning</dd></div>
+    <div><dt>Simulation and analysis</dt><dd>SCAPS-1D, Materials Studio, SRIM/TRIM, SPENVIS, SR-NIEL, OriginPro, ImageJ, numerical methods</dd></div>
+    <div><dt>Machine learning</dt><dd>Random forest, CatBoost, XGBoost, scikit-learn, SHAP; Python</dd></div>
     <div><dt>Signal processing, code</dt><dd>Causal filters, CUSUM change detection, Welch spectral analysis; Python (NumPy, SciPy, Matplotlib), JavaScript</dd></div>
     <div><dt>Embedded and avionics</dt><dd>ARM architecture and assembly, bus systems and DMA, real-time scheduling, control systems</dd></div>
     <div><dt>Communications and RF</dt><dd>AM, SSB, FM and PCM; ASK and FSK; transmission lines and VSWR; antennas and microwave engineering</dd></div>
@@ -155,7 +160,7 @@ dl.k dd{margin:0}
 
 <section>
   <h2>References</h2>
-  <p>Md. Masud Parvez, Assistant Professor, Department of Science and Humanities, Aviation and Aerospace University, Bangladesh (thesis supervisor). Contact details on request; further academic references available on request.</p>
+  <p>Md. Masud Parvez, Assistant Professor, Department of Science and Humanities, Aviation and Aerospace University, Bangladesh (thesis supervisor). Email: <a href="mailto:masud.magura@aaub.edu.bd" target="_blank" rel="noopener">masud.magura@aaub.edu.bd</a>. Further academic references available on request.</p>
 </section>
 
 <p class="upd">Updated November 2026</p>
