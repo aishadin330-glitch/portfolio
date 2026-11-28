@@ -47,11 +47,11 @@ dl.k dd{margin:0}
   dl.k div{grid-template-columns:1fr;gap:0}
   h1{font-size:19pt}
 }
-@page{size:A4;margin:14mm 16mm}
+@page{size:A4;margin:12mm 15mm}
 @media print{
   html{background:#fff}
   .sheet{margin:0;width:auto;padding:0;box-shadow:none}
-  body{font-size:10pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{font-size:9.7pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   a{color:var(--link)}
 }
 </style>
@@ -114,11 +114,11 @@ dl.k dd{margin:0}
   <h2>Projects</h2>
   <div class="entry">
     <div class="row"><span><span class="t">Machine-learning prediction of a proton-irradiated lead-free solar cell</span></span><span class="r">Course project</span></div>
-    <p>With two teammates, supervised by Dr. S. M. Sadakatul Bari. Ran the radiation chain for an ITO/C60/Rb₂AgInBr₆/Cu₂NiSnS₄/Pt cell in the ISS orbit: SPENVIS (AP9 protons), MULASSIS (5 mm glass) and SRIM/TRIM gave a radiation defect density of 1.59 × 10⁷ cm⁻³, added in SCAPS-1D. Produced 4,212 simulated devices (efficiency 1.5–37%) and trained 5 regression models: CatBoost reached a test R² of 0.9999 and a 0.48% efficiency error on 48 unseen devices; SHAP showed defect and acceptor density dominate. The model fails outside its range, and the data are simulated only.</p>
+    <p>With two teammates, supervised by Dr. S. M. Sadakatul Bari. I ran all the simulations, starting with the radiation chain for an ITO/C60/Rb₂AgInBr₆/Cu₂NiSnS₄/Pt cell in the ISS orbit: SPENVIS (AP9 protons), MULASSIS (5 mm glass) and SRIM/TRIM gave a radiation defect density of 1.59 × 10⁷ cm⁻³, added in SCAPS-1D. Produced 4,212 simulated devices (efficiency 1.5–37%); the training of 5 regression models was done with AI-assisted coding: CatBoost reached a test R² of 0.9999 and a 0.48% efficiency error on 48 unseen devices; SHAP showed defect and acceptor density dominate. The model fails outside its range, and the data are simulated only.</p>
   </div>
   <div class="entry">
     <div class="row"><span><span class="t">AeroSoar</span>: vertical air velocity estimation for soaring gliders</span><span class="r">Simulation study</span></div>
-    <p>First author, with two co-authors, of an open-source simulator (Python and JavaScript, MIT licence) to estimate vertical air velocity and detect thermals for autonomous soaring gliders. Compared causal filters and detectors (Kalman, extended Kalman, particle filters, CUSUM) over 30 simulated flights per condition, across 3 mission types and with sensor faults. In simulation, substituting the true speed rate for the Kalman filter’s estimate cut its error in speed changes from 0.70 to 0.05 m/s. Replayed 53 minutes of recorded flight data (public ALFA dataset) to check the sensor assumptions. Reproducible from fixed seeds; simulation only, with no claim of flight readiness. <a href="https://github.com/aishadin330-glitch/Aerosoar" target="_blank" rel="noopener">Code</a> · <a href="https://aishadin330-glitch.github.io/Aerosoar/" target="_blank" rel="noopener">Live simulator</a> · <a href="https://doi.org/10.5281/zenodo.24621517" target="_blank" rel="noopener">DOI 10.5281/zenodo.24621517</a></p>
+    <p>First author, with two co-authors, of an open-source simulator, developed with AI-assisted coding (Python and JavaScript, MIT licence), to estimate vertical air velocity and detect thermals for autonomous soaring gliders. Compared causal filters and detectors (Kalman, extended Kalman, particle filters, CUSUM) over 30 simulated flights per condition, 3 mission types and sensor faults. In simulation, substituting the true speed rate for the Kalman filter’s estimate cut its error in speed changes from 0.70 to 0.05 m/s. Replayed 53 minutes of recorded flight data (public ALFA dataset) to check the sensor assumptions. Reproducible from fixed seeds; simulation only, with no claim of flight readiness. <a href="https://github.com/aishadin330-glitch/Aerosoar" target="_blank" rel="noopener">Code</a> · <a href="https://aishadin330-glitch.github.io/Aerosoar/" target="_blank" rel="noopener">Live simulator</a> · <a href="https://doi.org/10.5281/zenodo.24621517" target="_blank" rel="noopener">DOI 10.5281/zenodo.24621517</a></p>
   </div>
   <div class="entry">
     <div class="row"><span><span class="t">Solar panel selection for the PicoSat</span>, PicoSat4Bangladesh</span><span class="r">Trade study</span></div>
@@ -146,21 +146,18 @@ dl.k dd{margin:0}
   <h2>Skills</h2>
   <dl class="k">
     <div><dt>Simulation and analysis</dt><dd>SCAPS-1D, Materials Studio, SRIM/TRIM, SPENVIS, SR-NIEL, OriginPro, ImageJ, numerical methods</dd></div>
-    <div><dt>Machine learning</dt><dd>Random forest, CatBoost, XGBoost, scikit-learn, SHAP; Python</dd></div>
-    <div><dt>Signal processing, code</dt><dd>Causal filters, CUSUM change detection, Welch spectral analysis; Python (NumPy, SciPy, Matplotlib), JavaScript</dd></div>
-    <div><dt>Embedded and avionics</dt><dd>ARM architecture and assembly, register-level C programming (GPIO, AHB bus access), control systems; used in the Real-Time Embedded Systems and Avionics Systems Design sessionals (bare-metal C, Tiva C TM4C123G LaunchPad, Keil)</dd></div>
-    <div><dt>Communications and RF</dt><dd>AM, SSB, FM and PCM; ASK and FSK; transmission lines and VSWR; antennas and microwave engineering; used in the Communication Systems sessional</dd></div>
+    <div><dt>Machine learning</dt><dd>Regression models (random forest, CatBoost, XGBoost) and SHAP analysis, built with AI-assisted coding</dd></div>
+    <div><dt>Signal processing and code</dt><dd>Causal filters, CUSUM change detection, Welch spectral analysis; C for microcontrollers (register-level, Keil); Python and JavaScript through AI-assisted coding</dd></div>
+    <div><dt>Embedded and avionics</dt><dd>ARM architecture and assembly, register-level C programming (GPIO, AHB bus access), control systems; used in the Real-Time Embedded Systems and Avionics Systems Design sessionals (Tiva C TM4C123G, Keil)</dd></div>
+    <div><dt>Communications and RF</dt><dd>AM, SSB, FM and PCM; ASK and FSK; transmission lines and VSWR; used in the Communication Systems sessional</dd></div>
   </dl>
 </section>
 
-<section>
-  <h2>Interests</h2>
-  <p>Pencil, graphite and coloured-pencil drawing; samples in the portfolio.</p>
-</section>
 
 <section>
   <h2>References</h2>
   <p>Md. Masud Parvez, Assistant Professor, Department of Science and Humanities, Aviation and Aerospace University, Bangladesh (thesis supervisor). Email: <a href="mailto:masud.magura@aaub.edu.bd" target="_blank" rel="noopener">masud.magura@aaub.edu.bd</a>; <a href="https://www.researchgate.net/profile/Md_Masud_Parvez3" target="_blank" rel="noopener">ResearchGate</a>. Further academic references available on request.</p>
+  <p>Interests: pencil and graphite drawing (samples in the portfolio).</p>
 </section>
 
 <p class="upd">Updated November 2026</p>
