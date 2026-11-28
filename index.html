@@ -302,10 +302,10 @@ html[data-motion="off"] .sky{display:none}
 .s-g{fill:var(--paper);opacity:.5}
 .wing{transform-box:fill-box}
 .wl{transform-origin:right center}.wr{transform-origin:left center}
-@keyframes p1{from{transform:translate(-16vw,16vh) rotate(6deg)}to{transform:translate(112vw,30vh) rotate(6deg)}}
-@keyframes p2{from{transform:translate(112vw,72vh) rotate(-8deg)}to{transform:translate(-16vw,58vh) rotate(-8deg)}}
-@keyframes p3{from{transform:translate(-12vw,-8vh) rotate(24deg)}to{transform:translate(108vw,92vh) rotate(24deg)}}
-@keyframes p4{from{transform:translate(-12vw,92vh) rotate(-22deg)}to{transform:translate(108vw,6vh) rotate(-22deg)}}
+@keyframes p1{from{transform:translate(-16vw,7vh) rotate(3deg)}to{transform:translate(112vw,9vh) rotate(3deg)}}
+@keyframes p2{from{transform:translate(112vw,34vh) rotate(-3deg)}to{transform:translate(-16vw,36vh) rotate(-3deg)}}
+@keyframes p3{from{transform:translate(-16vw,61vh) rotate(3deg)}to{transform:translate(112vw,63vh) rotate(3deg)}}
+@keyframes p4{from{transform:translate(112vw,88vh) rotate(-3deg)}to{transform:translate(-16vw,90vh) rotate(-3deg)}}
 @keyframes tilt-l{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}
 @keyframes tilt-r{from{transform:rotate(7deg)}to{transform:rotate(-7deg)}}
 @keyframes glint{from{transform:translateX(-4px)}to{transform:translateX(64px)}}
@@ -332,6 +332,13 @@ footer a{display:inline-block;padding:13px 0}
   .sky .sat:nth-child(n+3){display:none}
   .sky .sat{opacity:.15}
   .sky .sat svg{width:56px}
+}
+/* phone lanes: the two satellites stay far apart */
+@keyframes m1{from{transform:translate(-18vw,14vh) rotate(4deg)}to{transform:translate(118vw,20vh) rotate(4deg)}}
+@keyframes m2{from{transform:translate(118vw,72vh) rotate(-4deg)}to{transform:translate(-18vw,78vh) rotate(-4deg)}}
+@media (max-width:640px){
+  html[data-motion="on"] .sky .sat:nth-child(1){animation-name:m1}
+  html[data-motion="on"] .sky .sat:nth-child(2){animation-name:m2}
 }
 </style>
 </head>
